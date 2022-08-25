@@ -167,6 +167,7 @@ class MessageModel(Model):
 
     class Meta:
         managed = False
+        ordering = ('-updated_at',)
         db_table = 'socket_message_model'
         
     def __str__(self):
